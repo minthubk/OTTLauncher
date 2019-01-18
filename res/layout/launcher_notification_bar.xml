@@ -1,0 +1,44 @@
+<com.pisen.ott.launcher.widget.slide.NotificationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/notification_layout_height"
+    android:background="@drawable/menu_bg_top"
+    android:gravity="right|center"
+    android:paddingRight="@dimen/banner_focus_border" >
+
+    <TextView
+        android:id="@+id/txtMenuWifi"
+        style="@style/Item.Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_item_height"
+        android:drawableLeft="@drawable/menu_wifi"
+        android:nextFocusLeft="@+id/txtMenuWifi"
+        android:text="无线网络" />
+
+    <View
+        style="@style/ActionBarItemSpace"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/txtMenuUsb"
+        style="@style/Item.Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_item_height"
+        android:drawableLeft="@drawable/menu_usb"
+        android:text="移动存储设备" />
+
+    <View
+        android:id="@+id/txtMenuUsbSpace"
+        style="@style/ActionBarItemSpace"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/txtMenuMessage"
+        style="@style/Item.Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_item_height"
+        android:drawableLeft="@drawable/menu_ic_message"
+        android:nextFocusRight="@+id/txtMenuMessage"
+        android:text="没有新消息" />
+
+</com.pisen.ott.launcher.widget.slide.NotificationLayout>

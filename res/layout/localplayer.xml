@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".localplayer.FileBrowserActivity" >
+
+    <include layout="@layout/launcher_notification_time"/>
+    
+    <com.pisen.ott.launcher.localplayer.FileCategoryLayout
+        android:id="@+id/menuLocalPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnFileLocalPlayer"
+            style="@style/Item"
+            android:layout_width="@dimen/public_item_width"
+            android:layout_height="@dimen/public_item_height"
+            android:nextFocusLeft="@+id/btnFileLocalPlayer"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="文件"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/btnVideoLocalPlayer"
+            style="@style/Item"
+            android:layout_width="@dimen/public_item_width"
+            android:layout_height="@dimen/public_item_height"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="视频"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/btnImageLocalPlayer"
+            style="@style/Item"
+            android:layout_width="@dimen/public_item_width"
+            android:layout_height="@dimen/public_item_height"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="图片"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/btnMusicLocalPlayer"
+            style="@style/Item"
+            android:layout_width="@dimen/public_item_width"
+            android:layout_height="@dimen/public_item_height"
+            android:nextFocusRight="@+id/btnMusicLocalPlayer"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="音乐"
+            android:textSize="36sp" />
+    </com.pisen.ott.launcher.localplayer.FileCategoryLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

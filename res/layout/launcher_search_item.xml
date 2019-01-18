@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/app_itme_width"
+    android:layout_height="@dimen/app_itme_height"
+    android:descendantFocusability="blocksDescendants" >
+
+    <com.pisen.ott.launcher.widget.SearchDownloadItemView
+        android:id="@+id/itemDownload"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<com.pisen.ott.launcher.localplayer.BrowserItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/imgFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="212dp"
+            android:layout_height="188dp"
+            android:background="@drawable/local_album_border"        
+            android:scaleType="fitXY"
+            android:src="@drawable/local_ic_apk" />
+<!-- 
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/image_viewer_counter"
+            android:textColor="#F3F3F3"
+            android:text="TextView"
+            android:textSize="18dp" />
+     -->
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+</com.pisen.ott.launcher.localplayer.BrowserItemView>

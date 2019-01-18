@@ -1,0 +1,750 @@
+{
+    "UiVersion": "1.2",
+    "ContentVersion": "20150114141750",
+    "Content": {
+        "Id": 60,
+        "Name": "主页",
+        "Image": "file:///android_asset/160927_6327.png",
+        "Type": "ContentView",
+        "StartParameters": null,
+        "DisplayCode": "0",
+        "ContentViewCode": "HOME",
+        "ParentID": 0,
+        "Description": null,
+        "ChildContent": [
+			{
+                "Id": 61,
+                "Name": "影视home0012",
+                "Image": "file:///android_asset/home0012.png",
+                "Type": "App",
+                "StartParameters": "com.pisen.router",
+                "DisplayCode": "home0012",
+                "ContentViewCode": null,
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": null
+            },
+            {
+                "Id": 62,
+                "Name": "游戏home1012",
+                "Image": "file:///android_asset/home1012.png",
+                "Type": "ContentView",
+                "StartParameters": null,
+                "DisplayCode": "home1012",
+                "ContentViewCode": "BLOCK_GAME",
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": [
+                    {
+                        "Id": 93,
+                        "Name": "game0012",
+                        "Image": "file:///android_asset/game0012.png",
+                        "Type": "App",
+                        "StartParameters": "com.aqq",
+                        "DisplayCode": "0012",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 94,
+                        "Name": "game0111",
+                        "Image": "file:///android_asset/game0111.png",
+                        "Type": "App",
+                        "StartParameters": "com.asd",
+                        "DisplayCode": "0111",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 95,
+                        "Name": "game1111",
+                        "Image": "file:///android_asset/game1111.png",
+                        "Type": "App",
+                        "StartParameters": "com.aaa",
+                        "DisplayCode": "1111",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 96,
+                        "Name": "game2011",
+                        "Image": "file:///android_asset/game2011.png",
+                        "Type": "App",
+                        "StartParameters": "coma.dsfsf",
+                        "DisplayCode": "2011",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 97,
+                        "Name": "game2111",
+                        "Image": "file:///android_asset/game2111.png",
+                        "Type": "App",
+                        "StartParameters": "coma.sdf",
+                        "DisplayCode": "2111",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 98,
+                        "Name": "game3011",
+                        "Image": "file:///android_asset/game3011.png",
+                        "Type": "App",
+                        "StartParameters": "com.sdfjb",
+                        "DisplayCode": "3011",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 99,
+                        "Name": "game3111",
+                        "Image": "file:///android_asset/game3111.png",
+                        "Type": "App",
+                        "StartParameters": "com.asdfj",
+                        "DisplayCode": "3111",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 100,
+                        "Name": "game4011",
+                        "Image": "file:///android_asset/game4011.png",
+                        "Type": "App",
+                        "StartParameters": "com.afj",
+                        "DisplayCode": "4011",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 101,
+                        "Name": "game4111",
+                        "Image": "file:///android_asset/game4111.png",
+                        "Type": "App",
+                        "StartParameters": "com.sdjfsdjf",
+                        "DisplayCode": "4111",
+                        "ContentViewCode": null,
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 102,
+                        "Name": "gamec0001",
+                        "Image": "file:///android_asset/gamec0001.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0001",
+                        "ContentViewCode": "LIST_GAME",
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 107,
+                                "Name": "西游记",
+                                "Image": "file:///android_asset/list_game_c0001_c1.png",
+                                "Type": "App",
+                                "ApkFile":"http://file.pisen.com.cn/ott/OTT001/System/system.1.0.0.apk",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 108,
+                                "Name": "天天向上",
+                                "Image": "file:///android_asset/list_game_c0001_c2.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c2",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 109,
+                                "Name": "西西里的河",
+                                "Image": "file:///android_asset/list_game_c0001_c3.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c3",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 110,
+                                "Name": "洗衣狂人",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c4",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 111,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c5",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 112,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c6",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 113,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c7",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 114,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c8",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 115,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c9",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 116,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c10",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 117,
+                                "Name": "热血高校",
+                                "Image": "file:///android_asset/list_game_c0001_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0001_c11",
+                                "ContentViewCode": null,
+                                "ParentID": 102,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 103,
+                        "Name": "gamec0002",
+                        "Image": "file:///android_asset/gamec0002.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0002",
+                        "ContentViewCode": "LIST_GAME",
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 108,
+                                "Name": "0",
+                                "Image": "file:///android_asset/list_game_c0002_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdf",
+                                "DisplayCode": "c0002_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 103,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 104,
+                        "Name": "gamec0003",
+                        "Image": "file:///android_asset/gamec0003.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0003",
+                        "ContentViewCode": "LIST_GAME",
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 109,
+                                "Name": "0",
+                                "Image": "file:///android_asset/list_game_c0003_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.asdfs",
+                                "DisplayCode": "c0003_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 104,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 105,
+                        "Name": "gamec0004",
+                        "Image": "file:///android_asset/gamec0004.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0004",
+                        "ContentViewCode": "LIST_GAME",
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 110,
+                                "Name": "0",
+                                "Image": "file:///android_asset/list_game_c0004_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.adsdf",
+                                "DisplayCode": "c0004_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 105,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 106,
+                        "Name": "gamec0005",
+                        "Image": "file:///android_asset/gamec0005.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0005",
+                        "ContentViewCode": "LIST_GAME",
+                        "ParentID": 62,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 111,
+                                "Name": "0",
+                                "Image": "file:///android_asset/list_game_c0005_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.sfsf",
+                                "DisplayCode": "c0005_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 106,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Id": 63,
+                "Name": "购物home2012",
+                "Image": "file:///android_asset/home2012.png",
+                "Type": "ContentView",
+                "StartParameters": null,
+                "DisplayCode": "home2012",
+                "ContentViewCode": "BLOCK_SHOP",
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": null
+            },
+            {
+                "Id": 64,
+                "Name": "应用home3012",
+                "Image": "file:///android_asset/home3012.png",
+                "Type": "ContentView",
+                "StartParameters": null,
+                "DisplayCode": "home3012",
+                "ContentViewCode": "BLOCK_APP",
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": [
+                    {
+                        "Id": 65,
+                        "Name": "大图",
+                        "Image": "file:///android_asset/app0012.png",
+                        "Type": "App",
+                        "StartParameters": "com.pisen.aaaa",
+                        "DisplayCode": "0012",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 66,
+                        "Name": "小图(左)",
+                        "Image": "file:///android_asset/app0111.png",
+                        "Type": "App",
+                        "StartParameters": "com.pisen.bbbb",
+                        "DisplayCode": "0111",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 67,
+                        "Name": "小图（右）",
+                        "Image": "file:///android_asset/app1111.png",
+                        "Type": "App",
+                        "StartParameters": "com.*.",
+                        "DisplayCode": "1111",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 68,
+                        "Name": "应用图2011",
+                        "Image": "file:///android_asset/app2011.png",
+                        "Type": "App",
+                        "StartParameters": "com.123",
+                        "DisplayCode": "2011",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 69,
+                        "Name": "应用app2111",
+                        "Image": "file:///android_asset/app2111.png",
+                        "Type": "App",
+                        "StartParameters": "com.aaa",
+                        "DisplayCode": "2111",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 70,
+                        "Name": "应用app3011",
+                        "Image": "file:///android_asset/app3011.png",
+                        "Type": "App",
+                        "StartParameters": "com.qwww",
+                        "DisplayCode": "3011",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 71,
+                        "Name": "应用app3111",
+                        "Image": "file:///android_asset/app3111.png",
+                        "Type": "App",
+                        "StartParameters": "com.aaa",
+                        "DisplayCode": "3111",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 72,
+                        "Name": "应用app4011",
+                        "Image": "file:///android_asset/app4011.png",
+                        "Type": "App",
+                        "StartParameters": "com.a",
+                        "DisplayCode": "4011",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 73,
+                        "Name": "应用app4111",
+                        "Image": "file:///android_asset/app4111.png",
+                        "Type": "App",
+                        "StartParameters": "com.aaa",
+                        "DisplayCode": "4111",
+                        "ContentViewCode": null,
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": null
+                    },
+                    {
+                        "Id": 74,
+                        "Name": "分类appc0001",
+                        "Image": "file:///android_asset/appc0001.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0001",
+                        "ContentViewCode": "LIST_APP",
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 79,
+                                "Name": "白发魔女",
+                                "Image": "file:///android_asset/list_app_c0001_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.a",
+                                "DisplayCode": "c0001_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 74,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 79,
+                                "Name": "奔跑吧！兄弟！",
+                                "Image": "file:///android_asset/list_app_c0001_c2.png",
+                                "Type": "App",
+                                "StartParameters": "com.a",
+                                "DisplayCode": "c0001_c2",
+                                "ContentViewCode": null,
+                                "ParentID": 74,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 79,
+                                "Name": "何以笙箫默",
+                                "Image": "file:///android_asset/list_app_c0001_c3.png",
+                                "Type": "App",
+                                "StartParameters": "com.a",
+                                "DisplayCode": "c0001_c3",
+                                "ContentViewCode": null,
+                                "ParentID": 74,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 75,
+                        "Name": "分类appc0002",
+                        "Image": "file:///android_asset/appc0002.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0002",
+                        "ContentViewCode": "LIST_APP",
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 80,
+                                "Name": "当你不再爱我",
+                                "Image": "file:///android_asset/list_app_c0002_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.",
+                                "DisplayCode": "c0002_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 75,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 80,
+                                "Name": "岁月神偷",
+                                "Image": "file:///android_asset/list_app_c0002_c2.png",
+                                "Type": "App",
+                                "StartParameters": "com.",
+                                "DisplayCode": "c0002_c2",
+                                "ContentViewCode": null,
+                                "ParentID": 75,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 80,
+                                "Name": "宝贝计划2",
+                                "Image": "file:///android_asset/list_app_c0002_c3.png",
+                                "Type": "App",
+                                "StartParameters": "com.",
+                                "DisplayCode": "c0002_c3",
+                                "ContentViewCode": null,
+                                "ParentID": 75,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 80,
+                                "Name": "一路向西",
+                                "Image": "file:///android_asset/list_app_c0002_c4.png",
+                                "Type": "App",
+                                "StartParameters": "com.",
+                                "DisplayCode": "c0002_c4",
+                                "ContentViewCode": null,
+                                "ParentID": 75,
+                                "Description": null,
+                                "ChildContent": null
+                            },
+							{
+                                "Id": 80,
+                                "Name": "死亡飞车2",
+                                "Image": "file:///android_asset/list_app_c0002_c5.png",
+                                "Type": "App",
+                                "StartParameters": "com.",
+                                "DisplayCode": "c0002_c5",
+                                "ContentViewCode": null,
+                                "ParentID": 75,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 76,
+                        "Name": "分类appc0003",
+                        "Image": "file:///android_asset/appc0003.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0003",
+                        "ContentViewCode": "LIST_APP",
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 81,
+                                "Name": "app0",
+                                "Image": "file:///android_asset/list_app_c0003_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.aaa",
+                                "DisplayCode": "c0003_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 76,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 77,
+                        "Name": "分类appc0004",
+                        "Image": "file:///android_asset/appc0004.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0004",
+                        "ContentViewCode": "LIST_APP",
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 82,
+                                "Name": "app0",
+                                "Image": "file:///android_asset/list_app_c0004_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.aaa",
+                                "DisplayCode": "c0004_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 77,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    },
+                    {
+                        "Id": 78,
+                        "Name": "分类appc0005",
+                        "Image": "file:///android_asset/appc0005.png",
+                        "Type": "ContentView",
+                        "StartParameters": null,
+                        "DisplayCode": "c0005",
+                        "ContentViewCode": "LIST_APP",
+                        "ParentID": 64,
+                        "Description": null,
+                        "ChildContent": [
+                            {
+                                "Id": 83,
+                                "Name": "app0",
+                                "Image": "file:///android_asset/list_app_c0005_c1.png",
+                                "Type": "App",
+                                "StartParameters": "com.aaa",
+                                "DisplayCode": "c0005_c1",
+                                "ContentViewCode": null,
+                                "ParentID": 78,
+                                "Description": null,
+                                "ChildContent": null
+                            }
+                        ]
+                    }
+                ]
+            },
+			{
+                "Id": 112,
+                "Name": "教育home4012",
+                "Image": "file:///android_asset/home4012.png",
+                "Type": "App",
+                "StartParameters": "com.oot.sd",
+                "DisplayCode": "home4012",
+                "ContentViewCode": null,
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": null
+            },
+            {
+                "Id": 113,
+                "Name": "社交home5012",
+                "Image": "file:///android_asset/home5012.png",
+                "Type": "App",
+                "StartParameters": "com.adfs",
+                "DisplayCode": "home5012",
+                "ContentViewCode": null,
+                "ParentID": 60,
+                "Description": null,
+                "ChildContent": null
+            }		
+        ]
+    }
+}

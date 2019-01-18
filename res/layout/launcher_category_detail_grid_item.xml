@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <!-- @dimen/detail_item_width detail_item_height-->
+    <com.pisen.ott.launcher.widget.DownloadItemView
+        android:id="@+id/itemDownload"
+        android:layout_width="@dimen/detail_item_width"
+        android:layout_height="@dimen/detail_item_width"
+        android:background="@drawable/home_bg_default"
+        android:clickable="true" />
+
+</FrameLayout>

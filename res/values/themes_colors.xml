@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_category_text">#0084FF</color>
+    <color name="item_banner_category_text">#80ffffff</color>
+
+    <drawable name="side_left_selected">#1874CD</drawable>
+    <drawable name="side_left_normal">#00000000</drawable>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg" >
+
+    <TextView
+        android:id="@+id/txtBannerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="聊吧"
+        android:textColor="@color/white"
+        android:textSize="@dimen/block_banner_title_size" />
+
+    <com.pisen.ott.launcher.widget.CommonScaleRectangleFocusView
+        android:id="@+id/chat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        app:requestDefaultFocus="true" >
+
+        <ImageView
+            android:id="@+id/chat_qinyouyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:src="@drawable/chat_friends" />
+
+        <ImageView
+            android:id="@+id/chat_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:focusable="true"
+            android:src="@drawable/chat_qq" />
+    </com.pisen.ott.launcher.widget.CommonScaleRectangleFocusView>
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chat_bottom_shadow"/>
+</RelativeLayout>

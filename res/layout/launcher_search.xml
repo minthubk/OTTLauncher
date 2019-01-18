@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:background="@drawable/search_half_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:nextFocusRight="@+id/search_btn_tab_flim"
+        android:paddingLeft="66.67dp"
+        android:paddingRight="66.67dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableRight="@drawable/search"
+                android:focusable="false"
+                android:hint="请输入首写字母搜索  如亮剑：LJ"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etSearch"
+                android:background="@drawable/search_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/voiceSearchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_margin="20dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/search_record_out_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/search_record_middle_bg" />
+
+                <ImageView
+                    android:id="@+id/imgSearchRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/search_record_0" />
+            </RelativeLayout>
+
+            <com.pisen.ott.launcher.search.SearchMenuLayout
+                android:id="@+id/voiceControlLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtVoice"
+                    style="@style/Item"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/search_back_bg"
+                    android:drawableLeft="@drawable/search_voice"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="@string/search_speaking"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtKeyboard"
+                    style="@style/Item"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/search_back_bg"
+                    android:drawableLeft="@drawable/search_keyboard"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="@string/search_switchkeyboard"
+                    android:textSize="22sp" />
+            </com.pisen.ott.launcher.search.SearchMenuLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputSearchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.pisen.ott.launcher.search.GridFocusLayout
+                android:id="@+id/keyboardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:columnCount="6"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                 >
+
+                <TextView
+                    android:id="@+id/searchA"
+                    style="@style/Item.Search"
+                    android:text="A" />
+
+                <TextView
+                    android:id="@+id/searchB"
+                    style="@style/Item.Search"
+                    android:text="B" />
+
+                <TextView
+                    android:id="@+id/searchC"
+                    style="@style/Item.Search"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/searchD"
+                    style="@style/Item.Search"
+                    android:text="D" />
+
+                <TextView
+                    android:id="@+id/searchE"
+                    style="@style/Item.Search"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/searchF"
+                    style="@style/Item.Search"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/searchG"
+                    style="@style/Item.Search"
+                    android:text="G" />
+
+                <TextView
+                    android:id="@+id/searchH"
+                    style="@style/Item.Search"
+                    android:text="H" />
+
+                <TextView
+                    android:id="@+id/searchI"
+                    style="@style/Item.Search"
+                    android:text="I" />
+
+                <TextView
+                    android:id="@+id/searchJ"
+                    style="@style/Item.Search"
+                    android:text="J" />
+
+                <TextView
+                    android:id="@+id/searchK"
+                    style="@style/Item.Search"
+                    android:text="K" />
+
+                <TextView
+                    android:id="@+id/searchL"
+                    style="@style/Item.Search"
+                    android:text="L" />
+
+                <TextView
+                    android:id="@+id/searchM"
+                    style="@style/Item.Search"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/searchN"
+                    style="@style/Item.Search"
+                    android:text="N" />
+
+                <TextView
+                    android:id="@+id/searchO"
+                    style="@style/Item.Search"
+                    android:text="O" />
+
+                <TextView
+                    android:id="@+id/searchP"
+                    style="@style/Item.Search"
+                    android:text="P" />
+
+                <TextView
+                    android:id="@+id/searchQ"
+                    style="@style/Item.Search"
+                    android:text="Q" />
+
+                <TextView
+                    android:id="@+id/searchR"
+                    style="@style/Item.Search"
+                    android:text="R" />
+
+                <TextView
+                    android:id="@+id/searchS"
+                    style="@style/Item.Search"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/searchT"
+                    style="@style/Item.Search"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/searchU"
+                    style="@style/Item.Search"
+                    android:text="U" />
+
+                <TextView
+                    android:id="@+id/searchV"
+                    style="@style/Item.Search"
+                    android:text="V" />
+
+                <TextView
+                    android:id="@+id/searchW"
+                    style="@style/Item.Search"
+                    android:text="W" />
+
+                <TextView
+                    android:id="@+id/searchX"
+                    style="@style/Item.Search"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/searchY"
+                    style="@style/Item.Search"
+                    android:text="Y" />
+
+                <TextView
+                    android:id="@+id/searchZ"
+                    style="@style/Item.Search"
+                    android:text="Z" />
+
+                <TextView
+                    android:id="@+id/search1"
+                    style="@style/Item.Search"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/search2"
+                    style="@style/Item.Search"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/search3"
+                    style="@style/Item.Search"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/search4"
+                    style="@style/Item.Search"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/search5"
+                    style="@style/Item.Search"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/search6"
+                    style="@style/Item.Search"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/search7"
+                    style="@style/Item.Search"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/search8"
+                    style="@style/Item.Search"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/search9"
+                    style="@style/Item.Search"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/search0"
+                    style="@style/Item.Search"
+                    android:text="0" />
+            </com.pisen.ott.launcher.search.GridFocusLayout>
+
+            <com.pisen.ott.launcher.search.SearchMenuLayout
+                android:id="@+id/keyboardControlLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtClear"
+                    style="@style/Item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_clear_bg"
+                    android:drawableLeft="@drawable/search_clear"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="@string/search_clear"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtSpace"
+                    style="@style/Item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_space_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/search_space"
+                    android:textColor="@color/darkblue"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtBack"
+                    style="@style/Item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_back_bg"
+                    android:drawableLeft="@drawable/search_back"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/search_back"
+                    android:textSize="22sp" />
+            </com.pisen.ott.launcher.search.SearchMenuLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_layout_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/AttachContentFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共找到" />
+
+            <TextView
+                android:id="@+id/txtSearchResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/AttachContentFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条记录" />
+
+            <LinearLayout
+                android:id="@+id/voiceTipLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp" />
+
+                <TextView
+                    style="@style/AttachContentFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按遥控器 &quot;" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/three_level_voicemark" />
+
+                <TextView
+                    style="@style/AttachContentFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&quot; 可开启语音搜索" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="102dp"
+                android:layout_marginLeft="100dp"
+                android:paddingRight="42.67dp"
+            	android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                 >
+
+                <com.pisen.ott.launcher.widget.OTTWiatProgress
+                    android:id="@+id/progressLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/public_waiting"
+                    android:visibility="gone" />
+
+                <com.pisen.ott.launcher.widget.CommonScaleFocusView
+                    android:id="@+id/layoutFilmResult"
+                    android:layout_alignRight="@+id/grdvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/txtFilmResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:text="查看影视结果  >>"
+                        android:textColor="#a4f2fe"
+                        android:textSize="20sp" />
+                </com.pisen.ott.launcher.widget.CommonScaleFocusView>
+
+                <com.pisen.ott.launcher.widget.GridScaleView
+                    android:id="@+id/grdvSearch"
+                    android:layout_width="480dp"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="@dimen/app_itme_width"
+                    android:layout_below="@id/layoutFilmResult"
+                    android:gravity="left"
+                    android:focusable="false"
+                    android:padding="20dp"
+                    android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="none"
+                    android:stretchMode="none"
+                    android:verticalSpacing="@dimen/block_category_item_vertical_spacing"
+                    android:visibility="gone"
+                     />
+                
+                <!--  android:focusable="false"
+                    android:columnWidth="@dimen/detail_item_width"-->
+                    <!-- android:nextFocusLeft="@id/search_btn_tab_flim" -->
+
+                <TextView
+                    android:id="@+id/txtEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="暂无内容"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

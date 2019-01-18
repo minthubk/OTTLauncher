@@ -1,0 +1,46 @@
+<com.pisen.ott.launcher.widget.slide.LeftMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftMenuLayout"
+    android:layout_width="@dimen/left_layout_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg_left"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/leftMrg"
+        style="@style/Item.SideLeft"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/menu_ic_app"
+        android:text="我的应用" />
+
+    <TextView
+        android:id="@+id/leftPlay"
+        style="@style/Item.SideLeft"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/menu_ic_play"
+        android:text="本地播放" />
+
+    <TextView
+        android:id="@+id/leftSetting"
+        style="@style/Item.SideLeft"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/menu_ic_setting"
+        android:text="系统设置" />
+
+    <TextView
+        android:id="@+id/leftMessage"
+        style="@style/Item.SideLeft"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/menu_ic_message"
+        android:text="消息中心" />
+
+    <TextView
+        android:id="@+id/leftSearch"
+        style="@style/Item.SideLeft"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/menu_search"
+        android:nextFocusDown="@+id/leftSearch"
+        android:text="全文搜索" />
+
+</com.pisen.ott.launcher.widget.slide.LeftMenuLayout>

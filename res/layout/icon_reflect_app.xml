@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/home_app_width"
+    android:layout_height="@dimen/home_app_height"
+    android:background="@drawable/home_bg_default" >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:scaleType="fitXY"
+        android:text="名称"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtName"
+        android:layout_marginBottom="18dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_ic_setting" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.pisen.ott.launcher.widget.ContentLayout
+        android:id="@+id/frmContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/launcher_menu_left_guide"
+        />
+    <include
+        layout="@layout/launcher_menu_left"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/launcher_notification_bar"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/launcher_menu_bottom"
+        android:visibility="gone" />
+
+</FrameLayout>

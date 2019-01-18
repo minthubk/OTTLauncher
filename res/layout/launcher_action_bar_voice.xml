@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notification_layout_height"
+        android:gravity="right|center"
+        android:orientation="horizontal"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:id="@+id/voiceTipLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AttachContentFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="按遥控器 &quot;" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/three_level_voicemark" />
+
+            <TextView
+                style="@style/AttachContentFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:text="&quot; 可开启语音搜索" />
+        </LinearLayout>
+
+        <View
+            style="@style/ActionBarItemSpace"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"/>
+
+        <com.pisen.ott.common.view.CTextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:format24Hour="HH:mm" />
+    </LinearLayout>
+
+</LinearLayout>

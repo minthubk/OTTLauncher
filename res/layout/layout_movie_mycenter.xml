@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <com.pisen.ott.launcher.widget.CommonScaleFocusView
+        android:id="@+id/focusScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="22dp" >
+
+        <com.pisen.ott.launcher.widget.RoundedTextView
+            android:id="@+id/movie_mycenter_history"
+            style="@style/MovieCommonStyle.Text"
+            android:background="@drawable/movie_mycenter_record_bg"
+            android:nextFocusUp="@id/movie_rb_mycenter"
+            android:text="播放记录"
+            app:riv_corner_radius="@dimen/recommend_round_radius" />
+
+        <com.pisen.ott.launcher.widget.RoundedTextView
+            android:id="@+id/movie_mycenter_favorite"
+            style="@style/MovieCommonStyle.Text"
+            android:layout_marginLeft="@dimen/movie_common_margin"
+            android:background="@drawable/movie_mycenter_favorite_bg"
+            android:nextFocusUp="@id/movie_rb_mycenter"
+            android:text="追剧收藏"
+            app:riv_corner_radius="@dimen/recommend_round_radius" />
+
+        <com.pisen.ott.launcher.widget.RoundedTextView
+            android:id="@+id/movie_mycenter_offline"
+            style="@style/MovieCommonStyle.Text"
+            android:layout_marginLeft="@dimen/movie_common_margin"
+            android:background="@drawable/movie_mycenter_offline_bg"
+            android:nextFocusUp="@id/movie_rb_mycenter"
+            android:text="我的缓存"
+            app:riv_corner_radius="@dimen/recommend_round_radius" />
+    </com.pisen.ott.launcher.widget.CommonScaleFocusView>
+
+</LinearLayout>

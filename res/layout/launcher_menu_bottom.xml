@@ -1,0 +1,93 @@
+<com.pisen.ott.launcher.widget.slide.BottomMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_layout_height"
+    android:layout_gravity="bottom"
+    android:background="@drawable/menu_bg_bottom"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/navMovie"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_movie_selector"
+        android:nextFocusLeft="@+id/navMovie"
+        android:nextFocusRight="@+id/navGame"
+        android:nextFocusUp="@+id/navMovie"
+        android:tag="@string/home_0012"
+        android:text="影视" />
+
+    <TextView
+        android:id="@+id/navGame"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_game_selector"
+        android:nextFocusLeft="@+id/navMovie"
+        android:nextFocusRight="@+id/navApp"
+        android:nextFocusUp="@+id/navGame"
+        android:tag="@string/home_1012"
+        android:text="游戏" />
+
+    <TextView
+        android:id="@+id/navApp"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_apps_selector"
+        android:nextFocusLeft="@+id/navGame"
+        android:nextFocusRight="@+id/navEdu"
+        android:nextFocusUp="@+id/navApp"
+        android:tag="@string/home_3012"
+        android:text="应用" />
+    
+    
+    <TextView
+        android:id="@+id/navEdu"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_education_selector"
+        android:nextFocusLeft="@+id/navApp"
+        android:nextFocusRight="@+id/navSocial"
+        android:nextFocusUp="@+id/navEdu"
+        android:tag="@string/home_4012"
+        android:text="教育" />
+
+    <TextView
+        android:id="@+id/navSocial"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_social_selector"
+        android:nextFocusLeft="@+id/navEdu"
+        android:nextFocusRight="@+id/navShopping"
+        android:nextFocusUp="@+id/navSocial"
+        android:tag="@string/home_5012"
+        android:text="社交" />
+
+    <TextView
+        android:id="@+id/navShopping"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_shopping_selector"
+        android:nextFocusLeft="@+id/navSocial"
+        android:nextFocusRight="@+id/navSettings"
+        android:nextFocusUp="@+id/navShopping"
+        android:tag="@string/home_2012"
+        android:text="购物" />
+    
+    <TextView
+        android:id="@+id/navSettings"
+        style="@style/Item.HomeNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/nav_settings_selector"
+        android:nextFocusLeft="@+id/navShopping"
+        android:nextFocusRight="@+id/navSettings"
+        android:nextFocusUp="@+id/navSettings"
+        android:text="设置" />
+
+</com.pisen.ott.launcher.widget.slide.BottomMenuLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/txt_half_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="小标题"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80808080"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/controlLayoutItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#0084ff"
+            android:gravity="center" >
+            <Button
+                android:id="@+id/btnInstall"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/app_statu_down"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:nextFocusDown="@+id/btnInstall"
+                android:nextFocusLeft="@+id/btnInstall"
+                android:nextFocusRight="@+id/btnInstall"
+                android:nextFocusUp="@+id/btnInstall"
+                android:text="下载安装"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

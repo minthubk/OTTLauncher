@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- 通用 -->
+    <dimen name="space_line">1px</dimen>
+    <dimen name="home_focus_border">22.67dp</dimen><!-- 34px -->
+    <dimen name="banner_focus_border_menu">16.67dp</dimen><!-- 25px -->
+    <dimen name="banner_focus_border_default">12dp</dimen><!-- 18px -->
+    <dimen name="banner_focus_border">20dp</dimen><!-- 30px -->
+    <dimen name="banner_category_focus_border">21.33dp</dimen><!-- 32px -->
+    <dimen name="public_item_height">50dp</dimen>
+    <dimen name="public_item_width">130dp</dimen>
+
+    <!-- 通知栏 -->
+    <dimen name="notification_layout_height">80dp</dimen>
+    <dimen name="notification_layout_margin_top">-79dp</dimen>
+    <dimen name="bottom_layout_height">146dp</dimen>
+    <dimen name="left_layout_width">190dp</dimen>
+    <dimen name="left_layout_margin_left">-185dp</dimen>
+
+    <!-- 主页版块 -->
+    <dimen name="action_bar_item_space">1dp</dimen>
+    <dimen name="home_block_width">260dp</dimen>
+    <dimen name="home_block_height">406dp</dimen>
+    <dimen name="home_block_item_space">-8dp</dimen>
+    <dimen name="home_app_width">195dp</dimen>
+    <dimen name="home_app_height">195dp</dimen>
+    <dimen name="home_app_item_space">15dp</dimen>
+    <!--
+    <dimen name="home_nav_width">60dp</dimen>
+    <dimen name="home_nav_height">60dp</dimen>
+    -->
+    <dimen name="reflect_height">60dp</dimen>
+    <dimen name="reflect_margin_top">20dp</dimen>
+    <dimen name="home_wrapper_margin">106dp</dimen>
+
+    <!-- 二级广告图 -->
+    <dimen name="block_banner_title_size">40sp</dimen>
+    <dimen name="block_banner_title_margin_top">30dp</dimen>
+    <dimen name="block_banner_width">440dp</dimen>
+    <dimen name="block_banner_height">270dp</dimen>
+    <dimen name="block_banner_below_width">214dp</dimen>
+    <dimen name="block_banner_below_height">130dp</dimen>
+    <dimen name="block_banner_normal_width">215dp</dimen>
+    <dimen name="block_banner_normal_height">200dp</dimen>
+    <dimen name="block_banner_category_width">213dp</dimen>
+    <dimen name="block_banner_category_height">80dp</dimen>
+    <dimen name="block_banner_margin">6dp</dimen>
+
+    <!-- 分类列表 -->
+    <dimen name="detail_item_width">167dp</dimen>
+    <dimen name="detail_item_height">234dp</dimen>
+    <dimen name="banner_category_focus_height">53.33dp</dimen><!-- 80px -->
+    <dimen name="block_category_title_wrapper_width">233.33dp</dimen><!-- 350px -->
+    <dimen name="block_category_title_focus_border">13.33dp</dimen><!-- 20px -->
+    <dimen name="block_category_padding">45dp</dimen>	
+    <dimen name="block_category_title_height">53.33dp</dimen><!-- 80px -->
+    <dimen name="block_category_title_margin">13.33dp</dimen><!-- 20px -->
+    <dimen name="block_category_item_width">166.67dp</dimen><!-- 250px -->
+    <dimen name="block_category_item_height">166.67dp</dimen><!-- 250px -->
+    <dimen name="block_category_item_height2">233.33dp</dimen><!-- 350px -->
+    <dimen name="block_category_item_margin_right">80dp</dimen><!-- 120px -->
+    <dimen name="block_category_item_horizontal_spacing">20dp</dimen><!-- 30px -->
+    <dimen name="block_category_item_vertical_spacing">20dp</dimen><!-- 30px -->
+    <dimen name="banner_category_layout_margin">6.67dp</dimen><!-- 10px -->
+    <dimen name="banner_category_item_padding_horizontal">23.33dp</dimen><!-- 35px -->
+    <dimen name="banner_category_item_padding_vertical">10dp</dimen><!-- 15px -->
+    <dimen name="search_result_app_width">167dp</dimen>
+    <!-- 消息中心 -->
+    <dimen name="msg_lvcontent_width">650dp</dimen>
+
+    <!-- 视频播放左侧 -->
+    <dimen name="videoplayer_focus_border">00px</dimen>
+
+    <!-- 本地浏览 -->
+    <dimen name="local_griditem_border">18.67dp</dimen><!-- 28px -->
+    <dimen name="local_nav_border">20dp</dimen><!-- 30px -->
+    <dimen name="local_player_icon_border">5dp</dimen>
+    <dimen name="local_player_icon_border2">10dp</dimen>
+    
+    <dimen name="local_player_image_width">240dp</dimen>
+    <dimen name="local_player_image_height">173dp</dimen>
+    <dimen name="local_filebrowser_boder">21.33dp</dimen><!-- 32px -->
+    
+    <!-- 影视-推荐 -->
+    <dimen name="movie_common_margin">10dp</dimen>
+    <dimen name="recommend_round_radius">6.5dip</dimen>
+    <dimen name="movie_focus_border">24dp</dimen>
+    <dimen name="focus_rectangle_border">25dp</dimen>
+    
+    <dimen name="app_itme_width">133.33dp</dimen>
+    <dimen name="app_itme_height">134.67dp</dimen>
+
+</resources>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/launcher_notification_time"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txtMsgTitle"
+            style="@style/ab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/msg_ic_back"
+            android:drawablePadding="13dp"
+            android:gravity="center_vertical"
+            android:text="视吧盒子V2.63更新通知" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/lvMsgCenter"
+        android:layout_width="@dimen/msg_lvcontent_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/txtMsgContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lafjalfjalfjlafjalfj\n lafjalfjalfjlajflaj \n dfajfljafljalfjalf\n kaf;akf;akf;afk"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</LinearLayout>

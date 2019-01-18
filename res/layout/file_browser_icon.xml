@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <FrameLayout
+            android:id="@+id/iconLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <ImageView
+                android:id="@+id/imgBg2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/local_player_icon_border2"
+                android:background="@drawable/local_image_border" />
+
+            <ImageView
+                android:id="@+id/imgBg1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/local_player_icon_border"
+                android:background="@drawable/local_image_border" />
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/local_image_border_sel"
+                android:src="@drawable/local_default_music"
+                android:scaleType="fitXY" />
+
+			<TextView
+	            android:id="@+id/txtCount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:layout_marginRight="25dp"
+	            android:layout_marginTop="25dp"
+	            android:background="@drawable/image_viewer_counter"
+	            android:gravity="center"
+	            android:text="0"
+	            android:textColor="#F3F3F3"
+	            android:textSize="18sp" />
+        </FrameLayout>
+        
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+</LinearLayout>

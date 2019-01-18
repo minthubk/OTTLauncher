@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftMenuLayout_Guide"
+    android:layout_width="72dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+     >
+
+    <com.pisen.ott.launcher.widget.LoopFaddingImageView
+        style="@style/Item.SideLeft.Guide"
+        android:src="@drawable/icon_home_guide_left"
+        />
+
+</LinearLayout>
+<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftMenuLayout_Guide"
+    android:layout_width="72dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_bg_left_guide"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+     >
+
+    <ImageView
+        style="@style/Item.SideLeft.Guide"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/menu_ic_setting"
+        />
+
+    <ImageView
+        style="@style/Item.SideLeft.Guide"
+        android:layout_marginTop="33.33dp"
+        android:src="@drawable/menu_ic_message" />
+
+    <ImageView
+        style="@style/Item.SideLeft.Guide"
+        android:layout_marginTop="33.33dp"
+        android:src="@drawable/menu_ic_app" />
+
+    <ImageView
+        style="@style/Item.SideLeft.Guide"
+        android:layout_marginTop="33.33dp"
+        android:src="@drawable/menu_ic_play"
+         />
+
+    <ImageView
+        style="@style/Item.SideLeft.Guide"
+        android:layout_marginTop="33.33dp"
+        android:src="@drawable/menu_search"
+       />
+
+</LinearLayout>-->

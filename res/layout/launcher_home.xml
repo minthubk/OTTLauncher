@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.pisen.ott.launcher.widget.HomeScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/reflect_margin_top" >
+
+        <GridLayout
+            android:id="@+id/blockLayout"
+            style="@style/Item.HomeBlockWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:scrollbars="horizontal" >
+
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockMovie"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusRight="@+id/blockGame"
+                android:tag="@string/home_0012"
+                app:iconBackground="@drawable/home_bg_movie"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_movie_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_movie_small"
+                app:iconWidth="@dimen/home_block_width" />
+            
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockGame"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusLeft="@+id/blockMovie"
+                android:nextFocusRight="@+id/blockEdu"
+                android:tag="@string/home_1012"
+                app:iconBackground="@drawable/home_bg_game"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_game_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_game_small"
+                app:iconWidth="@dimen/home_block_width" />
+            
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockEdu"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusLeft="@+id/blockGame"
+                android:nextFocusRight="@+id/blockSocial"
+                android:tag="@string/home_4012"
+                app:iconBackground="@drawable/home_bg_edu"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_edu_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_edu_small"
+                app:iconWidth="@dimen/home_block_width" />
+
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockSocial"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusLeft="@+id/blockEdu"
+                android:nextFocusRight="@+id/blockApp"
+                android:tag="@string/home_5012"
+                app:iconBackground="@drawable/home_bg_social"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_social_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_social_small"
+                app:iconWidth="@dimen/home_block_width" />
+
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockApp"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusLeft="@+id/blockSocial"
+                android:nextFocusRight="@+id/blockShop"
+                android:tag="@string/home_3012"
+                app:iconBackground="@drawable/home_bg_appdown"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_appdown_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_appdown_small"
+                app:iconWidth="@dimen/home_block_width" />
+            <com.pisen.ott.launcher.widget.HomeIconReflectView
+                android:id="@+id/blockShop"
+                style="@style/Item.IconReflect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowSpan="2"
+                android:nextFocusLeft="@+id/blockApp"
+                android:nextFocusRight="@+id/appSettings"
+                android:tag="@string/home_2012"
+                app:iconBackground="@drawable/home_bg_shop"
+                app:iconHeight="@dimen/home_block_height"
+                app:iconTextBackground="@drawable/home_bg_shop_bottom"
+                app:iconTextDrawableLeft="@drawable/home_ic_shop_small"
+                app:iconWidth="@dimen/home_block_width" />
+            
+            <com.pisen.ott.launcher.widget.AppIconReflectView
+                android:id="@+id/appSettings"
+                style="@style/Item.IconTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusLeft="@+id/blockShop"
+                app:iconBackground="@drawable/home_bg_app01"
+                app:iconHeight="@dimen/home_app_height"
+                app:iconImage="@drawable/home_ic_setting"
+                app:iconText="系统设置" />
+
+            <com.pisen.ott.launcher.widget.AppIconReflectView
+                android:id="@+id/appMgr"
+                style="@style/Item.IconReflectBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusLeft="@+id/blockShop"
+                app:iconBackground="@drawable/home_bg_app03"
+                app:iconHeight="@dimen/home_app_height"
+                app:iconImage="@drawable/home_ic_appmgr"
+                app:iconText="我的应用"
+                app:iconWidth="@dimen/home_app_width" />
+
+            <com.pisen.ott.launcher.widget.AppIconReflectView
+                android:id="@+id/appMessageCenter"
+                style="@style/Item.IconTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:iconBackground="@drawable/home_bg_app02"
+                app:iconHeight="@dimen/home_app_height"
+                app:iconImage="@drawable/home_ic_message"
+                app:iconText="消息中心"
+                app:iconWidth="@dimen/home_app_width" />
+
+            <com.pisen.ott.launcher.widget.AppIconReflectView
+                android:id="@+id/appLocalPlayer"
+                style="@style/Item.IconReflectBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:iconBackground="@drawable/home_bg_app04"
+                app:iconHeight="@dimen/home_app_height"
+                app:iconImage="@drawable/home_ic_localplay"
+                app:iconText="本地播放"
+                app:iconWidth="@dimen/home_app_width" />
+        </GridLayout>
+    </com.pisen.ott.launcher.widget.HomeScrollView>
+
+</LinearLayout>

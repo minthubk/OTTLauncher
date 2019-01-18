@@ -1,0 +1,20 @@
+{
+    "System": {
+        "Apk": "http://test.file.pisen.com.cn:9212/ott/OTT001/System/system.1.0.0.apk",
+        "MD5": "onUploadComplete",
+        "SystemVersion": "1.0.0",
+        "InternalVersion": 5435436,
+        "UiVersion": "1.2",
+        "Description": null,
+        "ReleaseDate": "2015-01-15 00:00:00"
+    },
+    "Content": [
+        {
+            "UiVersion": "1.2",
+            "Config": "http://test.file.pisen.com.cn:9212/ott/OTT001/Content/1.2/content.20150714100116.json",
+            "ConentVersion": "20150714100116",
+            "MD5": "518804a0a68cb50546bbb64f0d4011a1",
+            "Description": null
+        }
+    ]
+}

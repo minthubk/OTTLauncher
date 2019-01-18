@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/music_bg_blue"
+    tools:context=".MusicPlayerActivity" >
+
+    <!-- 主布局 -->
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <com.pisen.ott.launcher.localplayer.music.MusicLeftMenuLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:minWidth="80dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/leftTitlebar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_layout_height"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/imvheadview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/musicplayer_musicmark" />
+
+                <TextView
+                    android:id="@+id/txtmusictitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="音乐列表  | "
+                    android:textColor="@color/lightblue"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtmusicnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="0"
+                    android:textColor="@color/lightblue"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <com.pisen.ott.launcher.localplayer.music.MusicListView
+                android:id="@+id/lstMusic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:choiceMode="singleChoice"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@null"
+                android:dividerHeight="1dp"
+                android:fadeScrollbars="true"
+                android:fadingEdge="none"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+        </com.pisen.ott.launcher.localplayer.music.MusicLeftMenuLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <include layout="@layout/launcher_notification_time"/>
+    
+            <RelativeLayout
+                android:id="@+id/fryRelLayout"
+                android:layout_width="640dp"
+                android:layout_height="205dp"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/musicplayer_roundd" />
+
+                    <ImageView
+                        android:id="@+id/musicabulmbg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/musicplayer_clockwise_rotation" />
+
+                    <RelativeLayout
+                        android:id="@+id/leftReLayout"
+                        android:layout_width="210dp"
+                        android:layout_height="205dp">
+                        <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerVertical="true"
+	                        android:paddingBottom="5dp"
+	                        android:paddingLeft="3dp"
+	                        android:paddingTop="5dp"
+	                        android:src="@drawable/musicplayer_animalrotationbackground" />
+                        <ImageView
+                            android:id="@+id/musicabulm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:scaleType="center"
+                            android:src="@drawable/musicplayer_abulm_test" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/musicabulmLayout"
+                        android:layout_width="258dp"
+                        android:layout_height="fill_parent">
+						<ImageView
+                            android:id="@+id/musicabulm_handler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/musicplayer_anima_handler" />
+                        
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/musicInforlayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/leftReLayout"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="30dp" >
+
+                        <ImageView
+                            android:id="@+id/imgSonglyrics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:layout_gravity="right"
+                            android:visibility="invisible"
+                            android:src="@drawable/music_lyrics_normal" />
+                        
+                        <TextView
+                            android:id="@+id/txtSongTitle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-26dp"
+                            android:layout_marginRight="26dp"
+			                android:singleLine="true"
+                            android:text="歌名"
+                            android:textSize="22sp"
+                            android:textColor="@color/blacklight" />
+
+                        <LinearLayout
+                            android:id="@+id/lrytimeshow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/txtcurrnttime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="当前时间"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/txttotaltime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总时间"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/seekbar"
+                            style="@style/AppSeekBar"
+                            android:layout_width="370dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:max="100"
+                            android:progress="0"
+                            android:secondaryProgress="0" />
+                    </LinearLayout>
+
+                    <com.pisen.ott.launcher.localplayer.music.MusicContorlLayout
+                        android:id="@+id/musicLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/musicInforlayout"
+                        android:layout_toRightOf="@id/musicabulmLayout"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:padding="12dp">
+
+                        <Button
+                            android:id="@+id/btn_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/musicplayer_playlist"
+                            android:tag="list"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_previous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/musicplayer_playbefore"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_pause_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/musicplayer_playbtn"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/musicplayer_playnext"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_sound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/musicplayer_playvolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+                    </com.pisen.ott.launcher.localplayer.music.MusicContorlLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 左侧菜单导航 -->
+
+</RelativeLayout>

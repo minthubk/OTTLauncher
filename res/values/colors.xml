@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- OTTBox APP -->
+        
+    <!-- (公共)基础颜色,可扩展(不建议修改) -->
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#808080</color>
+	<color name="red">#FF0000</color>
+	<color name="gold">#FFD700</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="green">#008000</color>
+	<color name="blue">#0000FF</color>
+	<color name="purple">#800080</color>
+	<color name="pink">#FFC0CB</color>
+	<color name="orange">#FFA500</color>
+	<color name="lemonyellow">#FFFACD</color>
+	<color name="graywhite">#F5F5F5</color>
+	<color name="grayslate">#708090</color>
+	<color name="graylight">#F0F8FF</color>
+	<color name="blacklight">#4D4D4D</color>
+	<color name="whitelight">#A9A9A9</color>
+	
+	<color name="lightblue">#0083FF</color>
+	<color name="darkblue">#c0044081</color>
+	
+	<!-- (公共)全透明与半透明,可添加指定颜色透明 -->
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    
+    <!-- 宫格,列表(子视图)颜色定义,可扩展 -->
+    <color name="griditem_transparent">#00000000</color>
+    <color name="griditem_black">#ff000000</color>
+    <color name="griditem_white">#ffffffff</color>
+    <color name="griditem_blue">#0e5986</color>
+    <color name="griditem_gray">#ff9da19e</color>
+    <color name="griditem_green">#ffe3ffc6</color>
+    
+    <!-- 视频播放 -->
+    <color name="video_title_blue">#0084FF</color>
+    <color name="video_Item_blue">#0A88FF</color>
+    
+    <!-- 视频播放 -->
+    <color name="music_bg_blue">#7779FB</color>
+    
+    <!-- 我的应用-->
+    <drawable name="openbtn_blue">#0988FE</drawable>
+    <drawable name="uninstall_red">#FE4545</drawable>
+    <drawable name="nohit_gray">#00808080</drawable>
+    <drawable name="full_transparent">#00000000</drawable>
+    <drawable name="half_transparent_grey">#66808080</drawable>
+    <color name="half_transparent_gray">#66808080</color>
+    <color name="openbtn_blue">#0988FE</color>
+    <color name="transparent_3">#55000000</color>
+    
+</resources>

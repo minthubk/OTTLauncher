@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.pisen.ott.launcher.localplayer.BrowserGridView
+        android:id="@+id/browserGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+        android:numColumns="4"
+        
+        android:padding="@dimen/home_focus_border"
+        android:verticalSpacing="@dimen/block_category_item_vertical_spacing" />
+    
+    <com.pisen.ott.launcher.localplayer.BrowserGridFile
+        android:id="@+id/browserGridFile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+        android:numColumns="4"
+        android:padding="@dimen/home_focus_border"
+        android:visibility="gone"
+        android:verticalSpacing="@dimen/block_category_item_vertical_spacing" />
+    <com.pisen.ott.launcher.localplayer.BrowserGridView
+        android:id="@+id/browserGridMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+        android:numColumns="5"
+        android:visibility="gone"
+        android:padding="@dimen/home_focus_border"
+        android:verticalSpacing="@dimen/block_category_item_vertical_spacing" />
+</LinearLayout>

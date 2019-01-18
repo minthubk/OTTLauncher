@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部导航 -->
+
+    <include layout="@layout/launcher_notification_time" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp" >
+
+        <TextView
+            android:id="@+id/txtLocalSecondLevelNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:drawableLeft="@drawable/local_nav_ic"
+            android:drawablePadding="10dp"
+            android:textSize="28sp" />
+    </FrameLayout>
+
+    <com.pisen.ott.launcher.localplayer.BrowserGridViewSub
+        android:id="@+id/grdContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:padding="@dimen/home_focus_border"
+        android:verticalSpacing="@dimen/block_category_item_vertical_spacing" />
+
+    <com.pisen.ott.launcher.localplayer.BrowserGridViewSub
+        android:id="@+id/grdContentMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:horizontalSpacing="@dimen/block_category_item_horizontal_spacing"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:padding="@dimen/home_focus_border"
+        android:verticalSpacing="@dimen/block_category_item_vertical_spacing"
+        android:visibility="gone" />
+
+    <com.pisen.ott.launcher.widget.OTTWiatProgress
+        android:id="@+id/animView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/public_waiting"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

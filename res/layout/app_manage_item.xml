@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.pisen.ott.launcher.widget.AppManageItemView
+        android:id="@+id/itemAppManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+    
+   <!--  <FrameLayout
+        android:layout_width="@dimen/detail_item_width"
+        android:layout_height="@dimen/detail_item_width" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageViewBackground"
+                android:layout_width="@dimen/detail_item_width"
+                android:layout_height="@dimen/detail_item_width"
+                android:background="@drawable/home_bg_default"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/txtApkPackgeName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/txt_half_bg"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="小标题"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/btnAppInforLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/half_transparent_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnAppOpen"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/apkinformation_openbtn"
+                android:drawableLeft="@drawable/app_statu_down"
+                android:focusable="true"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="打开"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnAppUnstall"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/apkinformation_uninstall"
+                android:drawableLeft="@drawable/app_statu_delete"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="卸载"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout> -->
+
+</FrameLayout>

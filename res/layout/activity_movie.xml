@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iqiyi_bg"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.33dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/iqiyi_logo"/>
+    
+    <!-- <com.pisen.ott.launcher.widget.CommonScaleFocusView -->
+
+    <com.pisen.ott.launcher.widget.CommonScaleFocusView
+        android:id="@+id/home_titil_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:requestDefaultFocus="true"
+        android:layout_marginTop="18dp"
+        android:padding="22dp" >
+
+        <RadioGroup
+            android:id="@+id/movie_title_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/movie_rb_recommend"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="推荐" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_film"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="电影" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_episode"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="电视剧" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_variety"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="综艺" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_cartoon"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="动漫" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_zone"
+                style="@style/TitleButton"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="专区" />
+
+            <RadioButton
+                android:id="@+id/movie_rb_mycenter"
+                style="@style/TitleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.67dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的" />
+        </RadioGroup>
+    </com.pisen.ott.launcher.widget.CommonScaleFocusView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38.67dp"
+         />
+
+</LinearLayout>

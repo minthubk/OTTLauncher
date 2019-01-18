@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:padding="10dp"
+    android:orientation="horizontal" 
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageView
+        android:id="@+id/imgVideoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/videoplayer_icon"
+        />
+    
+    <TextView 
+        android:id="@+id/txtVideoRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="珍藏的经典电影"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        />
+    
+    <ImageView 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/videoplayer_slide"
+        android:layout_gravity="center_vertical"
+        />
+     
+    <TextView 
+        android:id="@+id/txtVideoCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="56"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical|right"
+        />
+    
+</LinearLayout>

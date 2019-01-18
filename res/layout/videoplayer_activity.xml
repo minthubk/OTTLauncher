@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <io.vov.vitamio.widget.CenterLayout
+        android:id="@+id/vovCenterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/surface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/imgPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/videoplayer_pause_big"
+            android:visibility="invisible" />
+    </io.vov.vitamio.widget.CenterLayout>
+
+    <include layout="@layout/launcher_notification_time" />
+
+    <com.pisen.ott.launcher.localplayer.music.MusicLeftMenuLayout
+        android:id="@+id/leftMenuLayout"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imgVideoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/videoplayer_icon" />
+
+            <TextView
+                android:id="@+id/txtVideoRoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="珍藏的经典电影"
+                android:textColor="@color/video_title_blue"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/videoplayer_slide" />
+
+            <TextView
+                android:id="@+id/txtVideoCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="56"
+                android:textColor="@color/video_title_blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <com.pisen.ott.launcher.localplayer.video.VideoListView
+            android:id="@+id/lstMenuItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/full_transparent"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="true"
+            android:fadingEdge="none"
+            android:listSelector="@color/full_transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+    </com.pisen.ott.launcher.localplayer.music.MusicLeftMenuLayout>
+
+    <com.pisen.ott.launcher.localplayer.video.VideoBottomMenuLayout
+        android:id="@+id/BottomControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="#f0373746"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="@style/AppSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginTop="-7dp"
+            android:focusable="false"
+            android:max="1000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/MovieInfoLayout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical" >
+
+                <com.pisen.ott.launcher.widget.MarqueeTextView
+                    android:id="@+id/txt_musicname"
+                    style="@style/TextView.VideoController"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="26sp"
+                    android:text="阿凡达2高清版" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:descendantFocusability="blocksDescendants" >
+
+                    <TextView
+                        android:id="@+id/txtCurrentTime"
+                        style="@style/TextView.VideoController"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="00:00:00" />
+
+                    <TextView
+                        style="@style/TextView.VideoController"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="  /  " />
+
+                    <TextView
+                        android:id="@+id/txtTotalTime"
+                        style="@style/TextView.VideoController"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="53:22:00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/VolumeLayout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20sp"
+                android:gravity="end"
+                android:descendantFocusability="blocksDescendants" >
+
+                <ImageView
+                    android:id="@+id/imgVolumIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/videoplayer_volum_selector" />
+
+                <ProgressBar
+                    android:id="@+id/volumeBar"
+                    style="@style/VolumController_SeekBar"
+                    android:layout_width="100dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/videoControlerlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/VolumeLayout"
+                android:layout_toRightOf="@id/MovieInfoLayout"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                
+                android:paddingBottom="3dp" >
+
+                <ImageView
+                    android:id="@+id/imgPrevious"
+                    style="@style/MediaController_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:nextFocusUp="@+id/imgPrevious"
+                    android:src="@drawable/videoplayer_pre_selector" />
+
+                <ImageView
+                    android:id="@+id/imgPlayOrPause"
+                    style="@style/MediaController_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp"
+                    android:nextFocusUp="@+id/imgPlayOrPause"
+                    android:src="@drawable/videoplayer_pause_selector" />
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    style="@style/MediaController_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:nextFocusRight="@+id/imgNext"
+                    android:nextFocusUp="@+id/imgNext"
+                    android:src="@drawable/videoplayer_next_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.pisen.ott.launcher.localplayer.video.VideoBottomMenuLayout>
+
+</FrameLayout>

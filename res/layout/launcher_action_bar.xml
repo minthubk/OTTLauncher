@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notification_layout_height"
+        android:gravity="right|center"
+        android:orientation="horizontal"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/txtMessageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/menu_ic_message"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/txtBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/bluetooth_icon"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/txtUsbDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/menu_usb"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtEthernetState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="@dimen/action_bar_item_space"
+            android:drawableLeft="@drawable/menu_ic_disconnected"
+            android:gravity="center_vertical" />
+          
+        <TextView
+            android:id="@+id/txtWifiState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="@dimen/action_bar_item_space"
+            android:drawableLeft="@drawable/menu_wifi"
+            android:gravity="center_vertical" 
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/weatherLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <View
+                style="@style/ActionBarItemSpace"
+                android:layout_margin="5dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/txtWeatherInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/weather_overcast"
+                android:gravity="center"
+                android:text="未知天气"
+                android:textSize="22sp"
+                android:textColor="#80ffffff" 
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/ActionBarItemSpace"
+            android:layout_margin="8dp"
+            android:layout_height="20dp" />
+
+        <com.pisen.ott.common.view.CTextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:format24Hour="HH:mm" 
+            android:alpha="0.5"
+            />
+    </LinearLayout>
+
+</LinearLayout>

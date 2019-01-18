@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/home_block_width"
+    android:layout_height="@dimen/home_block_height"
+    android:background="@drawable/home_bg_default"
+    android:clipChildren="false"
+    android:clipToPadding="false" >
+
+    <ImageView
+        android:id="@+id/imgOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bg_appdown_bottom"
+        android:drawableLeft="@drawable/home_ic_appdown_small"
+        android:drawablePadding="6dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:scaleType="fitXY"
+        android:text="名称"
+        android:textSize="24sp" />
+
+</RelativeLayout>

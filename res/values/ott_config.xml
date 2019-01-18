@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页编号定义 -->
+    <string name="home_0012">0012</string>
+    <string name="home_1012">1012</string>
+    <string name="home_2012">2012</string>
+    <string name="home_3012">3012</string>
+    <string name="home_4012">4012</string>
+    <string name="home_5012">5012</string>
+
+    <!-- 二级界面编号定义 -->
+    <string name="banner_0012">0012</string>
+    <string name="banner_0111">0111</string>
+    <string name="banner_1111">1111</string>
+    <string name="banner_2011">2011</string>
+    <string name="banner_2111">2111</string>
+    <string name="banner_3011">3011</string>
+    <string name="banner_3111">3111</string>
+    <string name="banner_4011">4011</string>
+    <string name="banner_4111">4111</string>
+</resources>

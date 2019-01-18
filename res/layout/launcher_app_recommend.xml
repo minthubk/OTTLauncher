@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtBannerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/block_banner_title_margin_top"
+            android:text="标题"
+            android:textSize="@dimen/block_banner_title_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.pisen.ott.launcher.widget.BannerScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/bannerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:padding="30dp" >
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtBannerSpan"
+                        style="@style/Item.AppRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusDown="@+id/txtBannerBelowLeft"
+                        android:nextFocusLeft="@+id/txtBannerSpan"
+                        android:tag="@string/banner_0012"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_height"
+                        app:iconWidth="@dimen/block_banner_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtBannerBelowLeft"
+                        style="@style/Item.AppRecommendReflect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/txtBannerSpan"
+                        android:nextFocusLeft="@+id/txtBannerBelowLeft"
+                        android:tag="@string/banner_0111"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_below_height"
+                        app:iconWidth="@dimen/block_banner_below_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtBannerBelowRight"
+                        style="@style/Item.AppRecommendReflect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBannerSpan"
+                        android:layout_toRightOf="@+id/txtBannerBelowLeft"
+                        android:tag="@string/banner_1111"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_below_height"
+                        app:iconWidth="@dimen/block_banner_below_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk1"
+                        style="@style/Item.AppRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/txtBannerSpan"
+                        android:tag="@string/banner_2011"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk2"
+                        style="@style/Item.AppRecommendReflect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtApk1"
+                        android:layout_toRightOf="@+id/txtBannerSpan"
+                        android:tag="@string/banner_2111"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk3"
+                        style="@style/Item.AppRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/txtApk1"
+                        android:tag="@string/banner_3011"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk4"
+                        style="@style/Item.AppRecommendReflect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtApk3"
+                        android:layout_toRightOf="@+id/txtApk2"
+                        android:tag="@string/banner_3111"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk5"
+                        style="@style/Item.AppRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/txtApk3"
+                        android:tag="@string/banner_4011"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+
+                    <com.pisen.ott.launcher.widget.DownloadIconReflectView
+                        android:id="@+id/txtApk6"
+                        style="@style/Item.AppRecommendReflect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtApk5"
+                        android:layout_toRightOf="@+id/txtApk4"
+                        android:tag="@string/banner_4111"
+                        app:iconBackground="@drawable/home_bg_default"
+                        app:iconHeight="@dimen/block_banner_normal_height"
+                        app:iconWidth="@dimen/block_banner_normal_width" />
+                </RelativeLayout>
+            </com.pisen.ott.launcher.widget.BannerScrollView>
+
+            <com.pisen.ott.common.view.GridFocusLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-35dp"
+                android:columnCount="5"
+                android:visibility="gone"
+                android:padding="@dimen/banner_focus_border" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
